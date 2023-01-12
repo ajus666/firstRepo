@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AJUS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-info">
+            <a href="#">
+                <h1> HOME </h1>
+            </a>
+        </div>
+        <div class="header-action">
+            <button class="btn-primary" id="btnAboutme">ABOUT ME</button>
+            <button class="btn-primary" id="btnContactme">CONTACT ME</button>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Hero -->
+    <div class="hero">
+        <div class="hero-img">
+            <img src="images.JPG" alt="images">
+        </div>
+        <div class="hero-text">
+            <h1> MUHAMMAD FAJRUL FALAQ</h1>
+            <H4>PRO PLAYER E-FOOTBALL</H4>
+            <h4>PUBLISHER</h4>
+        </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Info -->
+    <div class="info">
+        <div class="info-list">
+            <a href="https://github.com/ajus666">
+                <img src="./New folder/github-black.png" alt="icon 1" class="github">
+            </a>
+        </div>
+        <div class="info-list">
+            <a href="https://www.linkedin.com/in/fajrul-falaq-156219255/">
+                <img src="./New folder/linkedin-black.png" alt="icon 2" class="linkedin">
+            </a>
+        </div>
+        <div class="info-list">
+            <a href="https://www.instagram.com/ajus________/">
+                <img src="./New folder/ig-black.png" alt="icon 3" class="ig">
+            </a>
+        </div>
+        <div class="info-list">
+            <a href="https://twitter.com/ReankAjus">
+                <img src="./New folder/twitter-black.png" alt="icon 4" class="twitter">
+            </a>
+        </div>
+        <div class="info-list">
+            <a href="https://www.tiktok.com/@ajus______">
+                <img src="./New folder/TikTok-black.png" alt="icon 5" class="twitter">
+            </a>
+        </div>
+    </div>
+    <div class="powered">
+        <p> &#169;2023 Muhammad Fajrul Falaq &#183; Powered by <a href="https://github.com/ajus666">Ajus</a></p>
+    </div>
+    <!-- End Info -->
+
+    <!-- Contact Me -->
+    <div class="contact" id="contactMe">
+        <div class="contact-content">
+            <div class="contact-close">
+                <span class="icon-close">&times;</span>
+            </div>
+            <h4> CONTACT ME</h4>
+            <hr>
+            <div class="email-contact">
+                <img src="./New folder/email.png" alt="email">
+            </div>
+            <div class="email-text">
+                <a href="mailto:phenatash27@gmail,com">
+                    <h4>PHENATASH27@GMAIL.COM</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Me -->
+
+    <!-- About Me -->
+    <div class="about" id="aboutMe">
+        <div class="about-content">
+            <div class="about-close">
+                <span class=" icon-close">&times;</span>
+            </div>
+            <h4>ABOUT ME</h4>
+            <hr>
+            <div class="about-image">
+                <img src="images2.JPG">
+                <p>Hello there, I am Muhammad Fajrul Falaq, u can call me Ajus. My hobby is playing games,
+                    playing soccer,
+                    sometimes I also like to design in Photoshop.
+                    I'm just learning software engineering. it's so much fun to learn about it. I am now working in CPA
+                    Marketing as a Publisher and also Freelance.</p>
+            </div>
+            <div class="education">
+                <p> My Education :</p>
+                <ul>
+                    <li class="edu-list"><a href="https://bit.ly/3GzXVoG">MI ISLAMIYAH UJUNGPANGKAH GRESIK</a></li>
+                    <li class="edu-list"><a href="https://bit.ly/3kawM4p">MTS ISLAMIYAH UJUNGPANGKAH GRESIK</a></li>
+                    <li class="edu-list"><a href="https://bit.ly/3w0aIfa">SMK MAMBA'UL IHSAN UJUNGPANGKAH GRESIK</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End About Me -->
+    <script>
+        var btnContactme = document.getElementById("btnContactme");
+        var contactMe = document.getElementById("contactMe");
+        var btnClosecontact = document.getElementsByClassName("icon-close")[0];
+        btnContactme.onclick = function () {
+            contactMe.style.display = "flex"
+        }
+        btnClosecontact.onclick = function () {
+            contactMe.style.display = "none"
+        }
+        window.onclick = function () {
+            if (event.target == contactMe) {
+                contactMe.style.display = "none"
+            }
+        }
+
+
+        var btnAboutme = document.getElementById("btnAboutme");
+        var aboutMe = document.getElementById("aboutMe");
+        var btnCloseabout = document.getElementsByClassName("icon-close")[1];
+        btnAboutme.onclick = function () {
+            aboutMe.style.display = "flex"
+        }
+        btnCloseabout.onclick = function () {
+            aboutMe.style.display = "none"
+        }
+
+        window.onclick = function () {
+            console.log(btnCloseabout);
+            if (event.target == aboutMe) {
+                aboutMe.style.display = "none"
+            }
+        }
+    </script>
+</body>
+
+</html>

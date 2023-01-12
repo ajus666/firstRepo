@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "inter";
+    font-style: normal;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(82.94deg, #F0F2FB 50.57%, #FEFEFF 77.18%);
+}
+
+.header {
+    display: flex;
+    padding: 12px 120px;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.header-info a {
+    color: rgba(26, 25, 25, 0.753);
+}
+
+.header-info h1 {
+    font-size: 24px;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 12px 120px;
+}
+
+.hero-img img {
+    margin-top: 150px;
+    margin-bottom: 40px;
+    width: 300px;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.hero-text h1 {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgba(26, 25, 25, 0.753);
+}
+
+.hero-text h4 {
+    font-size: 20px;
+    text-align: center;
+    color: rgba(26, 25, 25, 0.753);
+}
+
+.info {
+    padding: 0px 56px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.info-list .github {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.info-list .linkedin {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.info-list .ig {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.info-list .twitter {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.powered {
+    margin-top: 190px;
+    text-align: center;
+    color: #23262f;
+}
+
+.powered a {
+    color: #00acee;
+}
+
+.contact {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+.contact-content {
+    background-color: #fefefe;
+    padding: 20px;
+    width: 30%;
+    height: 70%;
+    margin: auto;
+    border-radius: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.178);
+}
+
+.contact-close {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e1e3ef;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.icon-close {
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #23262f;
+}
+
+.contact-content h4 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.email-contact img {
+    padding-bottom: 0px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-text a h4 {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 230px;
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+.about-content {
+    background-color: #fefefe;
+    padding: 20px;
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    border-radius: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.178);
+}
+
+.about-close {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e1e3ef;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.about-content h4 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+    margin-left: 38px;
+
+}
+
+.about-image img {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-image p {
+    font-size: 20px;
+    padding: 30px;
+    text-align: justify;
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.education p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.edu-list {
+    display: block;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.edu-list a {
+    margin-top: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #000000;
+}
+
+.copy-2 {
+    margin-top: 55px;
+    text-align: center;
+}
+
+.copy-2 a {
+    color: #00acee;
+}
+
+@media (max-width:1024px) {
+    .contact-content {
+        width: 50%;
+    }
+
+    .about-content {
+        width: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    .contact-content {
+        width: 50%;
+    }
+
+    .about-content {
+        width: 50%;
+    }
+
+    .about-image p {
+        font-size: 12px;
+    }
+
+    .education {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:576px) {
+
+    .header,
+    .hero,
+    .info,
+    .contact,
+    .about {
+        padding: 12px 30px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .header-info {
+        display: none;
+    }
+
+    .header-action {
+        align-items: center;
+    }
+
+    .hero-img img {
+        width: 200px;
+        margin-top: 100px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .hero-text h4 {
+        font-size: 17px;
+    }
+
+    .powered {
+        margin-top: 210px;
+    }
+
+    .powered p {
+        font-size: 10px;
+        margin-top: 10%;
+    }
+
+    .contact-content {
+        width: 100%;
+    }
+
+    .email-contact {
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+
+    }
+
+    .email-text a h4 {
+        font-size: 16px;
+        margin-top: 1px;
+    }
+
+    .contact .powered {
+        margin-top: 320px;
+        font-size: 12px;
+    }
+
+    .about-content {
+        width: 100%;
+        height: 70%;
+    }
+
+    .about-image img {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        width: 100px;
+        border-radius: 20%;
+    }
+
+    .about-image p {
+        font-size: 12px;
+    }
+
+    .education p {
+        font-size: 12px;
+    }
+
+    .edu-list {
+        font-size: 9px;
+    }
+
+    .copy-2 {
+        font-size: 12px;
+        margin-top: 65%;
+    }
+}
